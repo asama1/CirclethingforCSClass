@@ -1,0 +1,44 @@
+let y = 0;
+let x = 0;
+let spacing = 10;
+// spacing
+
+
+function setup() {
+  createCanvas(600, 800);
+  background(25);
+}
+
+function draw() {
+
+  stroke(40, 15, 190);
+  strokeWeight(2
+              );
+  if (random(1) > 0
+      // makes a neat design it looks like a cone shape.
+      
+     ) {
+    circle(x, y, x + spacing, y + spacing);
+    fill(20, 30, 40)
+    rect(x, y, x + spacing, y + spacing);
+   
+    // this makes rectangles
+  } else {
+    fill(10, 60, 450)
+    circle(0, y + spacing, x + spacing, 0);
+     
+    // this makes circles
+    
+    x += 10;
+    y += 10
+  }
+
+  x += spacing;
+
+  if (x > width) {
+    y += spacing;
+    x = 0
+
+
+  }
+}
